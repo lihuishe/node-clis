@@ -10,7 +10,12 @@ async function touch() {
     return
   }
 
-  await fs.utimes(file, new Date(),new Date())
+  try {
+    await fs.utimes(file, new Date(),new Date())
+  } catch(err) {
+    await fs.writeFile(file, '')
+  }
+
 }
 
 touch()
