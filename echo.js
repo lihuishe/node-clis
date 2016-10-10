@@ -2,10 +2,10 @@
 require('./helper')
 
 let fs = require('fs').promise
-let argv = require('yargs').argv
 
 async function echo() {
-    process.stdout.write(argv._ + '\n')
+  let ret = process.argv[2] == undefined ? "" : process.argv[2]
+  process.stdout.write(ret + '\n')
 }
 
 echo()

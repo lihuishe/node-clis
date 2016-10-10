@@ -2,10 +2,9 @@
 require('./helper')
 
 let fs = require('fs').promise
-let argv = require('yargs').argv
 
 async function touch() {
-  let file = argv._[0]
+  let file = process.argv[2]
   if(file == undefined) {
     process.stdout.write('no filename specified. please specify a filename for touch \n')
     return

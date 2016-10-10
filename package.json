@@ -11,18 +11,19 @@
     "cli:echo": "node echo.js",
     "cli:cat": "node cat.js",
     "cli:touch": "node touch.js",
-    "cli:mkdir": "node mkdir.js"
+    "cli:mkdir": "node mkdir.js",
+    "cli:rm": "node rm.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/CrabDude/nodejs-clis.git"
+    "url": "git@github.com:lihuishe/node-clis.git"
   },
-  "author": "Adam Crabtree",
+  "author": "Roy Shen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CrabDude/nodejs-clis/issues"
+    "url": "https://github.com/lihuishe/node-clis"
   },
-  "homepage": "https://github.com/CrabDude/nodejs-clis#readme",
+  "homepage": "https://github.com/lihuishe/node-clis#readme",
   "dependencies": {
     "babel-cli": "^6.16.0",
     "babel-preset-nodev6": "^1.0.0",
@@ -30,8 +31,7 @@
     "nodemon": "^1.10.2",
     "npm-run-all": "^3.1.0",
     "songbird": "^1.0.4",
-    "trycatch": "^1.5.21",
-    "yargs": "^3.32.0"
+    "trycatch": "^1.5.21"
   },
   "devDependencies": {
     "rimraf": "^2.5.4",

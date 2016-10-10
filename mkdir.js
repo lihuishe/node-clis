@@ -2,16 +2,15 @@
 require('./helper')
 
 let fs = require('fs').promise
-let argv = require('yargs').argv
 
-async function touch() {
-  let file = argv._[0]
-  if(file == undefined) {
-    process.stdout.write('no filename specified. please specify a filename for touch \n')
+async function mkdir() {
+  let path = process.argv[2]
+  if(path == undefined) {
+    process.stdout.write('no path specified. please specify a path to create a directory with \n')
     return
   }
 
-  await fs.utimes(file, new Date(),new Date())
+  await fs.mkdir(path)
 }
 
-touch()
+mkdir()

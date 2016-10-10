@@ -2,10 +2,9 @@
 require('./helper')
 
 let fs = require('fs').promise
-let argv = require('yargs').argv
 
 async function cat() {
-  let file = argv._[0]
+  let file = process.argv[2]
   if(file == undefined || !(await fs.stat(file)).isFile()) {
     process.stdout.write('incorrect or no file specified. please pass in the file as the first argument \n')
     return
