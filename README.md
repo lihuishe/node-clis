@@ -26,5 +26,4 @@ Time spent: 3
 
 ## Walkthrough Gif:
 
-`<Add your Walkthrough Gif here (by updating the image URL)>`
-![Video Walkthrough](...)
+![alt tag](https://github.com/lihuishe/node-clis/raw/master/s1.gif)
